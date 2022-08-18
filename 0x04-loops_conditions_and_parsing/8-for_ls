@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display the files on the current directory with only it's name
+
+list=$(ls)
+
+for element in ${list}; do echo "${element}" | cut -d "-" -f 2; done
